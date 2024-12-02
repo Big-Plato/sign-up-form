@@ -2,42 +2,50 @@
     box-sizing: border-box;
     font-family: 'Poppins';
 }
+
+* {
+    box-sizing: inherit;
+}
+
 html {
     background-image: url(./assets/img/background-image.jpg);
     background-position: left;
     background-size: cover;
     z-index: 1;
+    width: 100%;
+    height: 100%;
 }
-
 #odin-logo {
     width: 100px;
     z-index: -1;
-    position: absolute;
     top: 200px;
     left: 100px;
+
 }
-#background-logo {
-    width: 100%;
-    height: 200px;
-    position: absolute;
+span {
     background-color: rgb(202, 84, 100, 30%);
-    top: 180px;
-    left: 0px;
-    z-index: -3;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#credit {
+
+#background {
     position: relative;
-    bottom: 5px;
-    font-size: 0.5rem;
-    color: aliceblue;
-    font-weight: normal;
-    bottom: 1px;
-    left: 100px;
-
-
+    top: 250px;
 }
+
+#credit {
+    color: white;
+    position: absolute;
+    top: 800px;
+    left: 40px;
+}
+
+
 .container {
-    width: calc(100% - 300px);
+    width: calc(100% - 400px);
     height: 100vh;
     background-color: white;
     z-index: 2;
@@ -49,38 +57,58 @@ html {
 form {
     position: relative;
     left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 80px;
+    column-gap: 200px;
 }
 
 #text-div {
     padding: 20px;
     text-align: justify;
+    width: 700px;
 }
 
 .form-div {
     display: flex;
     flex-direction: column;
-    flex-basis: auto;
-    width: 300px;
-    margin-bottom: 10px;
 }
-.form-control {
-    display: block;
+
+label {
+    font-weight: 500;
 }
+input {
+    width: 200px;
+    height: 25px;
+}
+
 .btn {
     background-color: #891416;
     width: 180px;
     height: 40px;
     border-radius: 10px;
+    position: relative;
+    left: 20px;
     color: white;
     font-family: 'Poppins', sans-serif;
 }
+#signup-form {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    
+}
+
 input {
     border-radius: 5px;
     box-shadow: 1px 1px black;
 }
+
 input:invalid {
     border: 2px solid red;
 }
+
 input:valid {
     border: 2px solid green;
 }

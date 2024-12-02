@@ -14,11 +14,12 @@
 </head>
 <body>
     <div id="background-image">
-        <div id="background-logo"></div>
+        <div id="background">
+            <span>
         <img id='odin-logo' src="./assets/img/odin-lined.png" alt="odin-project-logo">
-        <p id="credit">Foto de Tuân Nguyễn Minh na Unsplash</p>
-
+        </span></div>
     </div>
+    <p id="credit">Foto de Tuân Nguyễn Minh na Unsplash</p>
     <div class="container">
         <div id="text-div">
             <h1>Sign-up in our site!</h1>
@@ -28,7 +29,7 @@
                 <br>
                 Meow Meow Purr!</p>
         </div>
-            <div id="form-div">
+        <div id="signup-form">
             <form method="post">
                 
                 <div class="form-div">
@@ -37,12 +38,12 @@
                     </label> 
                     <input class="form-control" id="first-name" name="first-name" type="text" required>
                 </div>
-                
                 <div class="form-div">
-                <label>
-                LAST NAME 
-                </label>
-                <input class="form-control" id="last-name" name="last-name" type="text" required>
+                    <label>
+                    LAST NAME 
+                    </label>
+                    <input class="form-control" id="last-name" name="last-name" type="text" required>
+                    
                 </div>
 
                 <div class="form-div">
@@ -51,7 +52,6 @@
                     </label>
                     <input class="form-control" type="email" id="user-email" name="email" placeholder="you@example.com" required>
                 </div>
-
                 <div class="form-div">
                     <label for="phone-number">
                     PHONE NUMBER
@@ -66,7 +66,6 @@
                     <input id="password" type="password" 
                     pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" name="password" required>
                 </div>
-
                 <div class="form-div">
                     <label for="confirm-password">
                     CONFIRM PASSWORD
@@ -74,10 +73,11 @@
                     <input type="password" id="confirm-password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" required>
                 </div>
                 
-                <button class='btn' type="submit">
-                    Create Account
-                </button>
+                
             </form>
+            <button class='btn' type="submit">
+                Create Account
+            </button>
         </div>
         
     </div>
