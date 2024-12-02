@@ -15,6 +15,7 @@ html {
     width: 100%;
     height: 100%;
 }
+
 #odin-logo {
     width: 100px;
     z-index: -1;
@@ -22,6 +23,7 @@ html {
     left: 100px;
 
 }
+
 span {
     background-color: rgb(202, 84, 100, 30%);
     width: 400px;
@@ -43,7 +45,6 @@ span {
     left: 40px;
 }
 
-
 .container {
     width: calc(100% - 400px);
     height: 100vh;
@@ -60,7 +61,7 @@ form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 80px;
+    row-gap: 40px;
     column-gap: 200px;
 }
 
@@ -78,9 +79,12 @@ form {
 label {
     font-weight: 500;
 }
+
 input {
     width: 200px;
     height: 25px;
+    box-shadow: 1px 3px 1px 2px rgb(137, 20, 22);
+    border-radius: 5px;
 }
 
 .btn {
@@ -93,6 +97,7 @@ input {
     color: white;
     font-family: 'Poppins', sans-serif;
 }
+
 #signup-form {
     display: flex;
     gap: 30px;
@@ -100,15 +105,35 @@ input {
     
 }
 
-input {
-    border-radius: 5px;
-    box-shadow: 1px 1px black;
-}
-
 input:invalid {
-    border: 2px solid red;
+    border: 3px solid red;
 }
 
 input:valid {
-    border: 2px solid green;
+    border: 3px solid green;
 }
+
+@media (max-width: 1280px) {
+    
+    form {
+        column-gap: 150px;
+    }
+} 
+
+/* @media (min-width: 1000px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form {
+        width:fit-content;
+        column-gap: 50px;
+        height: 100vh;
+    }
+    .container {
+        width: fit-content;
+        height: 100vh;
+    }
+
+} */
